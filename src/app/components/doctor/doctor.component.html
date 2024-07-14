@@ -1,0 +1,51 @@
+
+    <div class="doctor">
+        <div class="title"><h2 class="section--title"><span>Our Doctors</span> for your help</h2></div>
+
+        <div class="card" *ngFor="let d of doctor | async">   
+    
+            <!-- Display medicine details added by admin here -->
+            <div class="card">
+            <img src="{{d.image}}" class="card-img-top" alt="{{d.image}}">
+                 <div class="card-body">
+                    <h5 class="card-text">doctorName:{{d.doctorName}}</h5>
+                    <p class="card-title">{{d.doctorId}}</p>
+                    <p class="card-text">Gender{{d.gender}}</p>
+                    <p class="card-text">Qualification:{{d.qualification}}</p>
+                    <p class="card-text">Specialitys:{{d.speciality}}</p>
+                    <p class="card-text">EmailId:{{d.emailId}}</p>
+                    <p class="card-text">Address:{{d.address}}</p>
+                </div>
+        </div>
+            <button  class="btn btn-link"><a class="nav-link"  href="/appointment">Make Appointment</a></button>
+    </div>
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

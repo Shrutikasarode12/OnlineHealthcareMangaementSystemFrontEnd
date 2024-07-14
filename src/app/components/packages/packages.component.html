@@ -1,0 +1,47 @@
+<div class="col-md-9 main--content">
+    <div class="title"><h2 class="section--title">Medicine</h2></div>
+
+    <div class="card" *ngFor="let p of packages | async">   
+
+        <!-- Display medicine details added by admin here -->
+        <div class="card">
+             <div class="card-body">
+                <h5 class="card-title">{{p.packageId}}</h5>
+                <p class="card-text">{{p.packageId}}</p>
+                <p class="card-text">{{p.p}}</p>
+
+                <button type="button" class="btn btn-danger btn-sm" onclick="Addtocart()">Delete</button>
+                <button type="button" class="btn btn-primary btn-sm ml-2" onclick="buy()">Edit</button>      
+            </div>
+      </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

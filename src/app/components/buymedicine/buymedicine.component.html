@@ -1,0 +1,49 @@
+<div class="buymedicine">
+
+    <div class="card" *ngFor="let m of medicine | async">   
+
+        <!-- Display medicine details added by admin here -->
+        <div class="card">
+            <img src="{{m.image}}" class="card-img-top" alt="{{m.image}}">
+
+             <div class="card-body">
+                <p class="card-text">Medicine ID:{{m.medicineId}}</p>
+                <h5 class="card-title">Medicine Name:{{m.medicineName}}</h5>
+                <p class="card-text">price{{m.price}}</p>
+            </div>
+            <button class="btn btn-success add-to-cart">Add to Cart</button>
+            <button class="btn btn-primary buy" data-toggle="modal" data-target="#paymentModal">Buy</button>
+      
+      </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

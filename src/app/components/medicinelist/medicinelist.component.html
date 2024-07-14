@@ -1,0 +1,45 @@
+
+<section class="medicalstore" href="medicinlist">
+  <div class="logo">
+      <h2>Med<span>Ex</span></h2>
+  </div>
+  <div>
+          <a href="/addmedicalstore" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Add-Madicine</a>
+  </div>
+  <div class="search">
+      <input type="text" placeholder="search Schedule..">
+      <button><i class="ri-search-2-line"></i></button>
+  </div>
+</section>
+
+<div class="panel panel-primary">
+  <div class="panel-heading">
+      <h2>Medicine list</h2>
+  </div>
+  <div class="panel-body">
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Medicine-id</th>
+      <th>Medicine-name</th>
+      <th>Medicine-price</th>
+     
+    </tr>
+  </thead>
+  <tbody>
+    <tr  *ngFor="let m of medicine | async">
+    
+      <td>{{m.medicineId}}</td>
+      <td>{{m.medicineName}}</td>
+      <td>{{m.price}}</td>
+      <td>
+        <button (click)="deleteMedicine(m.medicineId)"  class="btn btn-danger" >Delete</button>
+        <button (click)="updateMedicine(m.medicineId)" class="btn btn-info" style="margin-left: 10px">Edit</button>
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>

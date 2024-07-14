@@ -1,0 +1,43 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+   background-color: rgba(130, 106, 251, 0.021);
+}
+
+.container {
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.container.form {
+    margin-top: 30px;
+    }
+
+
+.form .gender{
+    column-gap: 5px;
+} 
+.form :where(.gender input, .gender label)  {
+    cursor: pointer;
+}
+
+h2 {
+    color: #343a40;
+}
+
+.form-control {
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 5px;
+}

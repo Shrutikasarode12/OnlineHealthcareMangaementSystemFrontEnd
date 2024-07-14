@@ -1,0 +1,128 @@
+/* General form styling */
+form {
+    
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f7f7f7;
+    
+
+}
+
+body {
+
+    /* The image used */
+  background:url("assets/bg-03.jpg");
+    /* Control the height of the image */
+    min-height: 380px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+
+h2 {
+    text-align: left;
+    color: #333;
+}
+
+/* Form group styling */
+.form-group {
+    display:flex ;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+}
+
+/* Button styling */
+button[type="submit"] {
+    background-color: #1da789;
+    color: white;
+
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #13c5b6;
+}
+
+/* Additional responsive styling */
+@media (max-width: 768px) {
+    form {
+        padding: 15px;
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
+
+    input, select, textarea {
+        font-size: 14px;
+    }
+
+    button[type="submit"] {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+ form{
+    border-radius:.5rem ;
+    padding: 2rem;
+    background-color: var(--light-bg);
+    margin: 0 auto;
+    max-width: 50rem;
+}
+
+form .message{
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    background-color: var(--blue);
+    padding: 1.2rem;
+    font-size: 1.7rem;
+    color: var(--white);
+    text-align: center;
+}
+
+ form .box{
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 5rem;
+    background-color: var(--white);
+    padding: 1.2rem 1.4rem;
+    font-size:1.7rem ;
+    color: var(--black);
+    text-transform: none;
+}
+
+ form span{
+    font-size:1.7rem ;
+    color: var(--black);
+}

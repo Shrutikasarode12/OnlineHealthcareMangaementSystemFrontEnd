@@ -1,0 +1,17 @@
+<form  (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label for="id">Medicine Id</label>
+        <input type="text" class="form-control" id="id" required [(ngModel)]="medicine.medicineId" name="id">
+        <small id="emailHelp" class="form-text text-muted">Medicin Id Can not be change</small>
+      </div>
+      <div class="form-group">
+        <label for="name">Medicine-Name</label>
+        <input type="text" class="form-control" id="name"  required [(ngModel)]="medicine.medicineName" name="name">
+      </div>
+      <div class="form-group">
+        <label for="name">Price</label>
+        <input type="text" class="form-control" id="price"  required [(ngModel)]="medicine.price" name="price">
+      </div>
+      
+      <button type="submit" class="btn btn-primary">Submit</button>
+</form>

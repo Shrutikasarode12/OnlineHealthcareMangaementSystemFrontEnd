@@ -1,0 +1,199 @@
+/* styles.css */
+
+/* Navbar customization */
+.navbar {
+    background-color: skyblue; /* Dark background */
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #ffffff; /* White text */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover,
+.navbar-nav .nav-link:hover {
+    color: skyblue; /* Hover color */
+}
+
+/* Form customization */
+.form-control {
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #17a2b8; /* Focus color */
+    box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.25); /* Focus shadow */
+}
+
+/* Card customization */
+.card {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hover shadow */
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* Section customization */
+#add-medicine,
+#medicine-details,
+#medicine-stock-details {
+    background-color: #f8f9fa; /* Light background */
+    padding: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Section shadow */
+}
+
+/* Buttons customization */
+.btn-primary,
+.btn-secondary,
+.btn-danger,
+.btn-sm {
+    border-radius: 0.25rem;
+}
+
+.btn-primary {
+    background-color: #007bff; /* Primary button color */
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker primary color on hover */
+    border-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #6c757d; /* Secondary button color */
+    border-color: #6c757d;
+}
+
+.btn-danger {
+    background-color: #dc3545; /* Danger button color */
+    border-color: #dc3545;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .col-md-4 {
+        flex: 0 0 100%; /* Stack columns on smaller screens */
+    }
+}
+
+/* Styling input fields */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Styling submit button */
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Small text below input fields */
+.form-text {
+    font-size: 12px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .form-control {
+        width: 100%;
+    }
+}
+/* Additional Custom CSS */
+
+/* Centering the form */
+form {
+    max-width: 500px;
+    margin:auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Styling form groups */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Adjusting label styles */
+.form-group label {
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    form {
+        width: 100%;
+        padding: 0 15px;
+    }
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+   background-color: rgba(130, 106, 251, 0.021);
+}
+
+.container {
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.container.form {
+    margin-top: 30px;
+    }
+
+
+.form .gender{
+    column-gap: 5px;
+} 
+.form :where(.gender input, .gender label)  {
+    cursor: pointer;
+}
+
+h2 {
+    color: #343a40;
+}
+
+.form-control {
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 5px;
+}

@@ -1,0 +1,29 @@
+<div *ngIf="alert" class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>Medicine Added</strong> Your data has been submited successfuly.
+  <button  (click)="closeAlert()"  (click)="closeAlert()" type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>  
+    <form  (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="medicineId">Medicine Id</label>
+            <input type="text" class="form-control" id="medicineId" required [(ngModel)]="medicine.medicineId" name="medicineId">
+            <small id="emailHelp" class="form-text text-muted">write medicin id</small>
+          </div>
+          <div class="form-group">
+            <label for="medicineName">medicineName </label>
+            <input type="text" class="form-control" id="medicineName"  required [(ngModel)]="medicine.medicineName" name="medicineName">
+          </div>
+          <div class="form-group">
+            <label for="price">price </label>
+            <input type="text" class="form-control" id="price"  required [(ngModel)]="medicine.price" name="price">
+          </div>
+          <div class="form-group">
+            <input type="file" class="form-control-file" id="medicine-image" accept="image/*" required>
+        </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  
+      
+
+        

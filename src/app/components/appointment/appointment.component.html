@@ -1,0 +1,52 @@
+<body>
+<form  (ngSubmit)="onSubmit()">
+
+    <div class=" form-group ">
+        <h2>Doctor's Appointment Form</h2>
+       
+        <!-- Patient Information -->
+        <label for="patientName">Full Name</label>
+        <input type="text" id="patientName" name="patientName" required>
+        
+        <label for="dob">Date of Birth</label>
+        <input type="text" id="dob" name="dob" required>
+        
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        
+        <label for="address">Address</label>
+        <textarea id="address" name="address" rows="3" required></textarea>
+        
+        <label for="phoneNo">Phone Number</label>
+        <input type="text" id="phoneNo" name="phoneNo" required>
+        
+        <label for="emailId">Email</label>
+        <input type="text" id="emailId" name="emailId" required>
+        
+        <!-- Appointment Details -->
+        <label for="date">Preferred Date</label>
+        <input type="date" id="date" name="date" required>
+        
+        <label for="time">Preferred Time</label>
+        <input type="time" id="time" name="time" required>
+        
+        <div class="form-group">
+         <label for="pro">Choose a addDoctor</label>
+            <select name="pro" id="pro" #selectedDoctor>
+                <option *ngFor="let d of doctors|async; let i=index" value="{{i}}">{{d.doctorName}}</option>
+            </select>
+          </div>
+      
+        <label for="reason">Reason for Appointment</label>
+        <textarea id="reason" name="reason" rows="3" required></textarea>
+
+         <!-- Submit Button -->
+         <button type="submit">Submit Appointment Request</button>
+    </div>
+</form>
+
+</body>

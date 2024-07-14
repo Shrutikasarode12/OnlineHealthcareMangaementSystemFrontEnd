@@ -1,0 +1,27 @@
+
+  .nav__logo {
+    font-size: 1.5rem;
+
+    font-weight: 600;
+    color:aqua;
+    
+
+  }
+  
+  .nav__logo span {
+    color: var(--secondary-color);
+  }
+  
+.logo{
+  font-size: 5rem;
+    font-weight: 600;
+    color:rgb(1, 15, 14)
+}
+
+.logo span{
+
+
+  color: #70d7a5;
+
+
+}
